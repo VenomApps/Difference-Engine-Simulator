@@ -1,0 +1,7 @@
+name: Michael Davis
+title: Web Dev Kit
+description: Difference Engine Simulator
+email: michael.e.davisjr@gmail.com
+locale: en-Us
+markdown: redcarpet
+exclude: ["node_modules", "gulpfile.js", "package.json", "README.md"]

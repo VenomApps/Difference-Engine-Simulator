@@ -1,0 +1,31 @@
+{
+  "name": "web-complete-toolkit",
+  "version": "1.0.0",
+  "description": "Toolkit for web development",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-sass": "^2.3.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheFastbreak/Web-Complete-Toolkit.git"
+  },
+  "keywords": [
+    "angluar",
+    "gulp",
+    "jekyll"
+  ],
+  "author": "Michael Davis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheFastbreak/Web-Complete-Toolkit/issues"
+  },
+  "homepage": "https://github.com/TheFastbreak/Web-Complete-Toolkit#readme"
+}
