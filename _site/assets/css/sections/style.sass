@@ -1,4 +1,114 @@
-#m
+html, body, h1, h2, h3
+  padding: 0 0
+  margin: 0 0
+a
+  color: inherit
+  text-decoration: none
+a:visited
+  color: inherit
+  text-decoration: none
+
+body
+  font-family: monospace
+  background-color: rgb(145, 207, 242)
+
+main
+  margin-top: 50px
+  //border: 1px solid black
+  width: calc(100vw - 2px)
+  height: 500px
+
+footer
+  border: 1px solid black
+  background-color: rgb(2, 14, 38)
+  position: fixed
+  bottom: 0
+  width: 100%
+  color: white
+
+#tit
+  padding-left: 20px
+  color: white
+  font-size: 50px
+  display: inline-block
+
+header
+  border-bottom: 3px solid black
+  background-color: rgb(2, 14, 38)
+  opacity: 0.8
+
+nav
+  display: inline-block
+  color: white
+  position: fixed
+  right: 0
+  padding-top: 20px
+  padding-right: 20px
+  > h2
+    display: inline-block
+    padding-left: 20px
+
+#equation, #exec
   text-align: center
-  color: coral
-  font-size: 60px
+  margin-bottom: 30px
+
+input
+  border: none
+  border-bottom: 3px solid black
+  background-color: transparent
+  color: red
+  font-size: 35px
+  text-align: right
+  font-family: monospace
+
+input:focus
+  background-color: transparent
+  outline: none
+  border-bottom: 3px solid black
+
+input[type=number]
+  width: 80px
+
+.sym, .x
+  display: inline-block
+  font-size: 35px
+
+#exec
+  > h1, input, #button
+    display: inline-block
+
+#button
+  margin-left: 40px
+  font-size: 25px
+  width: 145px
+  border: 1px solid black
+  border-radius: 20px
+  background-color: rgb(223, 246, 244)
+
+#display
+  padding: 0 20px
+  border-radius: 20px
+  margin: 0 auto
+  width: 700px
+  height: 700px
+  color: white
+  background-color: rgba(0, 0, 0, 0.44)
+  overflow: auto
+  > h1
+    text-align: center
+    margin-bottom: 10px
+  > h3
+    padding-bottom: 10px
+
+table
+  margin: 0 auto
+  text-align: center
+th
+  border-bottom: 1px solid white
+  border: none
+
+
+td
+  width: 30px
+  height: 30px
+  border-bottom: 1px solid white
