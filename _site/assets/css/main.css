@@ -85,7 +85,8 @@ input[type=number] {
   border: 1px solid black;
   -webkit-border-radius: 20px;
           border-radius: 20px;
-  background-color: #dff6f4; }
+  background-color: #dff6f4;
+  cursor: pointer; }
 
 #display {
   padding: 0 20px;
@@ -115,3 +116,30 @@ td {
   width: 30px;
   height: 30px;
   border-bottom: 1px solid white; }
+
+.panel {
+  position: absolute;
+  background-color: #91cff2;
+  width: -webkit-calc(100vw * 0.60);
+  width: calc(100vw * 0.60);
+  left: -webkit-calc((100vw - (100vw * 0.60)) * 0.50);
+  left: calc((100vw - (100vw * 0.60)) * 0.50);
+  height: 700px;
+  display: none; }
+
+.info {
+  display: inline-block;
+  width: 500px;
+  height: 500px;
+  position: relative;
+  bottom: -webkit-calc((100vh - 700px) * 0.20);
+  bottom: calc((100vh - 700px) * 0.20);
+  margin-left: 100px; }
+
+.bab {
+  display: inline-block;
+  -webkit-border-radius: 20px;
+          border-radius: 20px; }
+
+#home, #doc {
+  cursor: pointer; }

@@ -84,6 +84,7 @@ input[type=number]
   border: 1px solid black
   border-radius: 20px
   background-color: rgb(223, 246, 244)
+  cursor: pointer
 
 #display
   padding: 0 20px
@@ -112,3 +113,26 @@ td
   width: 30px
   height: 30px
   border-bottom: 1px solid white
+
+.panel
+  position: absolute
+  background-color: #91cff2
+  width: calc(100vw * 0.60)
+  left: calc((100vw - (100vw * 0.60)) * 0.50)
+  height: 700px
+  display: none
+
+.info
+  display: inline-block
+  width: 500px
+  height: 500px
+  position: relative
+  bottom: calc((100vh - 700px) * 0.20)
+  margin-left: 100px
+
+.bab
+  display: inline-block
+  border-radius: 20px
+
+#home, #doc
+  cursor: pointer

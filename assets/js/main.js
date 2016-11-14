@@ -1,6 +1,8 @@
 $(window).on('load',function(){
   function engine (degree5t, degree4t,degree3t,degree2t,degree1t,degreet){
     $('#tab').empty();
+    $('#equa').empty();
+
     var data = "<tr><th>X</th><th>Y</th><th>Y&prime;</th><th>Y&Prime;</th><th>Y&tprime;</th><th>Y&qprime;</th><th>Y&qprime;&prime;</th></tr>";
 
     var degree5val = degree5t;
@@ -9,6 +11,10 @@ $(window).on('load',function(){
     var degree2val = degree2t;
     var degree1val = degree1t;
     var degreeval = degreet;
+
+    y_equation = `(${degree5val})X<sup>5</sup>+(${degree4val})X<sup>4</sup>+(${degree3val})X<sup>3</sup>+(${degree2val})X<sup>2</sup>+(${degree1val})X+(${degreeval})`;
+
+    $('#equa').append(y_equation);
 
     var y_base = degreeval;
 
@@ -85,15 +91,22 @@ $(window).on('load',function(){
 
   }
 
-  function check(){
-    if(window.location.href.endsWith('#/') == true){
-      $('#button').on('click',function(){
-        load();
-      });
-    }
-  }
 
-  setInterval(check, 1000);
+  $('#button').on('click',function(){
+    load();
+  });
+
+  $('#doc').on('click', function(){
+    $('#calc').slideUp(1000);
+    $('.panel').delay(1300).slideDown();
+
+  });
+
+  $('#home').on('click', function(){
+    $('.panel').slideUp(1000);
+    $('#calc').delay(1300).slideDown();
+
+  });
 
 
 });
