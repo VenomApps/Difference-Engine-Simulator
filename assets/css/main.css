@@ -75,11 +75,15 @@ input[type=number] {
   display: inline-block;
   font-size: 35px; }
 
-#exec > h1, #exec input, #exec #button {
+#dec, h3 {
+  margin-left: 20px;
+  display: inline; }
+
+#exec > h1, #exec #num, #exec #button {
   display: inline-block; }
 
 #button {
-  margin-left: 40px;
+  margin-left: 20px;
   font-size: 25px;
   width: 145px;
   border: 1px solid black;
@@ -93,8 +97,8 @@ input[type=number] {
   -webkit-border-radius: 20px;
           border-radius: 20px;
   margin: 0 auto;
-  width: 700px;
-  height: 700px;
+  width: 600px;
+  height: 600px;
   color: white;
   background-color: rgba(0, 0, 0, 0.44);
   overflow: auto; }
@@ -111,6 +115,11 @@ table {
 th {
   border-bottom: 1px solid white;
   border: none; }
+
+#or {
+  font-size: 40px;
+  text-align: center;
+  margin: 10px 0px; }
 
 td {
   width: 30px;
@@ -132,8 +141,6 @@ td {
   width: 500px;
   height: 500px;
   position: relative;
-  bottom: -webkit-calc((100vh - 700px) * 0.20);
-  bottom: calc((100vh - 700px) * 0.20);
   margin-left: 100px; }
 
 .bab {
@@ -143,3 +150,6 @@ td {
 
 #home, #doc {
   cursor: pointer; }
+
+#equa {
+  font-size: 10px; }

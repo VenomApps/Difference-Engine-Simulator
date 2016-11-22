@@ -2,9 +2,12 @@
   <img class="bab" width="430px" height="430px" src="../assets/img/diff.jpg" alt="" />
   <div class="info">
     <p>
-      Nam ornare, justo vel suscipit maximus, lorem risus vehicula enim, vitae viverra urna nisi ac est. Suspendisse potenti. Nunc placerat turpis nec ligula feugiat bibendum. Sed eget tortor vel quam aliquam scelerisque eget in diam. Curabitur consequat massa quis enim lacinia dapibus. Donec sit amet massa lobortis, ultrices magna vel, scelerisque tellus. Sed non porta turpis. Nunc auctor nibh sit amet dapibus venenatis.
+      For my CS-164 I was tasked with creating a web program to simulate Charles Babbage's difference engine. Babbage's difference engine essentially allows one to compute high order degree derivatives with just addition. In order to buidl this I used a combination of technologies including Html, Css, Javascript, Angualr, Jquery, and Gulp. In order to compute the next order of differences I build a javascript function that uses a for loop and recursion to itereate through a user enFEtered amount of difference rows.
       <br/><br/><br/>
-      Pellentesque feugiat urna nibh, eu vulputate nibh fringilla eu. Nullam eget eros tempus, auctor leo eu, auctor tellus. Fusce odio dui, tristique iaculis pretium vel, ultricies nec nisi. Aenean malesuada eleifend risus sed dapibus. Quisque nec neque non tortor consectetur tempor. In elementum, tortor eu interdum hendrerit, risus felis venenatis eros, non pharetra sapien augue in sem. Ut a sapien maximus, vestibulum arcu nec, venenatis lectus. Nam ac erat pellentesque, rhoncus lacus vitae, iaculis lacus. Nulla congue tellus ac interdum tristique. Proin at diam efficitur, suscipit elit sed, euismod mi.
+      Upon first seeing the problem, I misinterpreted the problem by asuming I had to compute the differences via an equation and not by a first order difference. This led me to create a fucntion that first computes the first order differences via derivatives then goes onto to use a for loop to process the following orders of differences starting with 1. After realizing I overcomplicated the problem, I created function that would allow the user to choose whether they wanted to compute via equation or first order differences.
+      <br/><br/><br/>
+      How To Use: My online difference engine simulator can compute differences from either an equation or first level difference orders. In order to use the simulator you first must choose what format you want to enter your data in. After choosing either an equation or a first order, you then must choose the amount of rows you want to compute. After checking the box to compute via an equation or unchecking the box to compute via a first order of differences, you clcik calculate. The results appear in the table below.
+
     </p>
   </div>
 </div>
@@ -12,29 +15,52 @@
   <div id="equation">
     <h1 class="sym">Y</h1>
     <h1 class="sym">=</h1>
-    <input id='deg5' size='7' type="text" name="n" value="" placeholder="339">
+    <input id='deg5' size='7' type="text" name="n" value="" placeholder="0">
     <h1 class="x">X<sup>5</sup></h1>
-    <input id='deg4' size='7' type="text" name="n" value="" placeholder="+5533">
+    <input id='deg4' size='7' type="text" name="n" value="" placeholder="0">
     <h1 class="x">X<sup>4</sup></h1>
-    <input id='deg3' size='7' type="text" name="n" value="" placeholder="-2127">
+    <input id='deg3' size='7' type="text" name="n" value="" placeholder="0">
     <h1 class="x">X<sup>3</sup></h1>
-    <input id='deg2' size='7' type="text" name="n" value="" placeholder="-139">
+    <input id='deg2' size='7' type="text" name="n" value="" placeholder="0">
     <h1 class="x">X<sup>2</sup></h1>
-    <input id='deg1' size='7' type="text" name="n" value="" placeholder="+53">
+    <input id='deg1' size='7' type="text" name="n" value="" placeholder="0">
     <h1 class="x">X<sup>1</sup></h1>
-    <input id='deg' size='7' type="text" name="n" value="" placeholder="+6788">
+    <input id='deg' size='7' type="text" name="n" value="" placeholder="0">
   </div>
+
+  <h1 id="or">OR</h1>
+
+
+  <div id="equation">
+    <input id="diff" size='7' type="text" name="n" value="" placeholder="0">
+    <h1 class="x">Y</h1>
+    <input id="diff1" size='7' type="text" name="n" value="" placeholder="0">
+    <h1 class="x">&#9651;Y</h1>
+    <input id="diff2" size='7' type="text" name="n" value="" placeholder="0">
+    <h1 class="x">&#9651;<sup>2</sup>Y</h1>
+    <input id="diff3" size='7' type="text" name="n" value="" placeholder="0">
+    <h1 class="x">&#9651;<sup>3</sup>Y</h1>
+    <input id="diff4" size='7' type="text" name="n" value="" placeholder="0">
+    <h1 class="x">&#9651;<sup>4</sup>Y</h1>
+    <input id="diff5" size='7' type="text" name="n" value="" placeholder="0">
+    <h1 class="x">&#9651;<sup>5</sup>Y</h1>
+  </div>
+
+
 
   <div id="exec">
     <h1>How Many Rows Would You Like To Generate?</h1>
     <input id="num" min="1" type="number" name="name" value="1">
+    <div class="row">
+      <h3>Check for equation leave unchecked for first order</h3>
+      <input id="dec" type="checkbox" name="name" value="">
+    </div>
     <div id="button">Calculate</div>
   </div>
 
   <div id="display">
     <h1>Results</h1>
     <h3>Your Computed Equation: <span id='equa'></span></h3>
-    <h3>Highest Degree: </h3>
     <h1>Table Values</h1>
     <table id="tab">
 
